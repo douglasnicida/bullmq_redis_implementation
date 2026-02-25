@@ -2,9 +2,10 @@
   "name": "bullmq_redis",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/index.ts",
+  "type": "module",
   "scripts": {
-    "dev": "ts-node src/index.ts",
+    "dev": "tsx watch src/index.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -12,12 +13,21 @@
   "license": "ISC",
   "packageManager": "pnpm@10.28.2",
   "devDependencies": {
+    "@types/cli-progress": "^3.11.6",
+    "@types/express": "^5.0.6",
+    "@types/ioredis": "^5.0.0",
     "@types/node": "^25.3.0",
-    "ts-node": "^10.9.2",
+    "tsx": "^4.21.0",
     "typescript": "^5.9.3"
   },
   "dependencies": {
-    "bull": "^4.16.5",
-    "dotenv": "^17.3.1"
+    "@bull-board/api": "^6.20.2",
+    "@bull-board/express": "^6.20.2",
+    "@bull-board/ui": "^6.20.2",
+    "bullmq": "^5.70.1",
+    "cli-progress": "^3.12.0",
+    "dotenv": "^17.3.1",
+    "express": "^5.2.1",
+    "ioredis": "^5.9.3"
   }
 }
