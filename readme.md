@@ -1,5 +1,7 @@
 # 🐂 BullMQ Queue Demo
 
+![alt text](image.png)
+
 A demonstration of job queue processing using **BullMQ** with real-time progress tracking via **cli-progress** multi-bar. Jobs are processed concurrently and each one displays its own animated progress bar in the terminal.
 
 ## ✨ Features
