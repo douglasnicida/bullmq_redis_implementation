@@ -29,7 +29,7 @@ src/
     └── bullmq.interface.ts   # VirtualThings type definition
 ```
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -55,11 +55,21 @@ REDIS_PASSWORD=your-redis-password
 API_PORT=3333
 ```
 
-### Running
+## 🚀 How to Run
 
+### 1. Start Redis
+```bash
+docker compose up -d
+```
+
+> Starts a Redis instance in the background. Make sure Docker is running before this step.
+
+### 2. Run the Application
 ```bash
 pnpm tsx src/index.ts
 ```
+
+> Jobs will be added to the queue and progress bars will appear in the terminal as they are processed.
 
 ## ⚙️ How It Works
 
